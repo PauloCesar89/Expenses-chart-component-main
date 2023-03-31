@@ -4,3 +4,9 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
 }
+
+body{
+    background:hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: center;
+}
