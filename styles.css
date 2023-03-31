@@ -10,3 +10,36 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.balance{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: hsl(27, 66%, 92%);
+}
+
+.spending{
+    padding: 20px;
+    border-radius: 10px;
+    background: hsl(33, 100%, 98%);
+}
+
+.spending .days{
+    display: flex;
+    justify-content: space-between;
+}
+
+.monthBalance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid hsl(28, 10%, 53%);
+    padding-top: 1rem;
+}
+
+
+/* border: 1px solid red; */
