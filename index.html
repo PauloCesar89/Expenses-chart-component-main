@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Expenses chart component</title>
@@ -18,26 +19,23 @@
 <body>
 
   <div class="container">
-    <div class="balance">
-      <h1>My balance</h1>
-      <h3>$921.48</h3>
-    </div>
-
+    <section class="balance">
+      <div>
+        <h1>My balance</h1>
+        <h3>$921.48</h3>
+      </div>
+      <img src="/images/logo.svg" alt="logo">
+    </section>
     <div class="spending">
       <div>
         <h1>Spending - Last 7 days</h1>
       </div>
-
-      <div class="days">
-        <h3>mon</h3>
-        <h3>true</h3>
-        <h3>wed</h3>
-        <h3>thu</h3>
-        <h3>fri</h3>
-        <h3>sat</h3>
-        <h3>sun</h3>
+      <!-- LOCAL ONDE VAI FICAR O GRAFICO -->
+      <div>
+        <canvas id="myChart"></canvas>
       </div>
-      <div class="monthBalance">
+
+      <section class="monthBalance">
         <div>
           <h2>Total this month</h2>
           <h3>$478.33</h3>
@@ -46,12 +44,12 @@
           <h3>+2.4%</h3>
           <h2>from last month</h2>
         </div>
-      </div>
+      </section>
 
     </div>
 
   </div>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>

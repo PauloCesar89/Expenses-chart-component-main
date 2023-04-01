@@ -13,13 +13,24 @@ body{
 
 .balance{
     background-color: hsl(10, 79%, 65%);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     width: 20rem;
     height: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: hsl(27, 66%, 92%);
+}
+
+.balance h1{
+    font-size: 10px;
+}
+
+.balance img{
+    width: 40px;
 }
 
 .spending{
@@ -28,14 +39,8 @@ body{
     background: hsl(33, 100%, 98%);
 }
 
-.spending .days{
-    display: flex;
-    justify-content: space-between;
-}
-
 .monthBalance{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     border-top: 1px solid hsl(28, 10%, 53%);
     padding-top: 1rem;
