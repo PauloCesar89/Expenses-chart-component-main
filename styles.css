@@ -1,10 +1,10 @@
-:root{
---Soft-red: hsl(10, 79%, 65%);
---Cyan: hsl(186, 34%, 60%);
---Dark-brown: hsl(25, 47%, 15%);
---Medium-brown: hsl(28, 10%, 53%);
---Cream: hsl(27, 66%, 92%);
---Very-pale-orange: hsl(33, 100%, 98%);
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
 }
 
 * {
@@ -57,17 +57,17 @@ body {
     padding-top: 1rem;
 }
 
-.monthBalance h3{
+.monthBalance h3 {
     color: var(--Medium-brown);
     font-size: 10px;
 }
 
-.last h2{
+.last h2 {
     text-align: end;
     font-size: 10px;
 }
 
-.total h2{
+.total h2 {
     font-size: 30px;
 }
 
