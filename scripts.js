@@ -29,18 +29,20 @@ const data = [
     }
 ];
 function localChart() {
-    const colours = data.map((value) => value < 50 ? 'hsl(186, 34%, 60%)' : 'hsl(10, 79%, 65%)');
     const inf = {
         labels: data.map((chart) => chart.day),
         datasets: [
             {
                 data: data.map((chart) => chart.amount),
-                backgroundColor: colours,
+                backgroundColor: 'hsl(10, 79%, 65%',
                 borderRadius: 4,
                 hoverBackgroundColor: "hsl(10, 56%, 68%)",
+
             },
         ],
     };
+    const titTooltip = (e) => `{e[0].formattedValue}`;
+    const labTooltip = (e) => "";
     const options = {
         scales: {
             y: {
@@ -60,12 +62,19 @@ function localChart() {
                 },
             },
         },
-        Plugins: {
-            legend: {
-                display: false,
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                yAlign: "bottom",
+                displayColors: false,
+                callbacks: {
+                    title: titTooltip,
+                    label: labTooltip,
+                },
             },
-        }
+        },
     };
+
     const config = {
         type: "bar",
         data: inf,
