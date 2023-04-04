@@ -41,7 +41,7 @@ function localChart() {
             },
         ],
     };
-    const titTooltip = (e) => `{e[0].formattedValue}`;
+    const titTooltip = (e) => `${e[0].formattedValue}`;
     const labTooltip = (e) => "";
     const options = {
         scales: {
