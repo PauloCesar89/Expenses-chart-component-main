@@ -19,6 +19,19 @@ Para fazer o deploy desse projeto rode
 ![WhatsApp Image 2023-04-05 at 15 40 18](https://user-images.githubusercontent.com/124107620/230174922-bbcf56db-599b-4c8f-8eea-89e677830d67.jpeg)
 
 
+## Tecnologias utilizadas
+
+•	HTML
+
+•	CSS
+
+•	JavaScript
+
+•	Media Queries
+
+•	Biblioteca Charts.js
+
+
 ## Referência
 
  - [referencias https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt/hub)
