@@ -34,14 +34,32 @@ function localChart() {
         datasets: [
             {
                 data: data.map((chart) => chart.amount),
-                backgroundColor: 'hsl(10, 79%, 65%',
+                backgroundColor: [
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(186, 34%, 60%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)'
+                ],
+
+                hoverBackgroundColor: [
+                    'hsl(10, 84%, 75%)',
+                    'hsl(10, 84%, 75%)',
+                    'hsl(186, 58%, 73%)',
+                    'hsl(10, 84%, 75%)',
+                    'hsl(10, 84%, 75%)',
+                    'hsl(10, 84%, 75%)',
+                    'hsl(10, 84%, 75%)'
+                ],
+
                 borderRadius: 4,
-                hoverBackgroundColor: "hsl(10, 56%, 68%)",
 
             },
         ],
     };
-    const titTooltip = (e) => `${e[0].formattedValue}`;
+    const titTooltip = (e) => `$${e[0].formattedValue}`;
     const labTooltip = (e) => "";
     const options = {
         scales: {
@@ -49,10 +67,13 @@ function localChart() {
                 ticks: {
                     display: false,
                 },
+
+                display: false,
+
                 grid: {
                     display: false,
-                    drawTicks: false,
-                    drawBorder: false
+                    drawTicks: true,
+                    drawBorder: true
                 },
             },
             x: {
@@ -60,17 +81,23 @@ function localChart() {
                     display: false,
                     drawBorder: false,
                 },
+                border: {
+                    color: 'hsl(0, 0%, 100%)',
+                }
             },
         },
         plugins: {
-            legend: { display: false },
+            legend: { display: false }, // Tira a legenda do topo do gráfico
             tooltip: {
-                yAlign: "bottom",
-                displayColors: false,
+                yAlign: 'none',
+                backgroundColor: 'hsl(25, 47%, 15%)',
+                cornerRadius: 3,
+               
                 callbacks: {
                     title: titTooltip,
                     label: labTooltip,
                 },
+
             },
         },
     };
