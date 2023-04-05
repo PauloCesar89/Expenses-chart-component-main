@@ -83,3 +83,21 @@ body {
 .total h2 {
     font-size: 30px;
 }
+
+@media screen and (max-width: 640px) {
+
+    .balance {
+
+        width: 15rem;
+        height: 3rem;
+
+    }
+
+    .spending {
+
+        width: 15rem;
+        height: 15rem;
+
+    }
+
+}
