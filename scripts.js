@@ -88,11 +88,11 @@ function localChart() {
         },
         plugins: {
             legend: { display: false }, // Tira a legenda do topo do gráfico
-            tooltip: {
+            tooltip: { 
                 yAlign: 'none',
                 backgroundColor: 'hsl(25, 47%, 15%)',
                 cornerRadius: 3,
-               
+                
                 callbacks: {
                     title: titTooltip,
                     label: labTooltip,
