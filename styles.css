@@ -36,10 +36,15 @@ body {
 
 .balance h1 {
     font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.balance h3 {
+    font-size: 18px;
 }
 
 .balance img {
-    width: 40px;
+    width: 45px;
 }
 
 .spending {
@@ -49,11 +54,17 @@ body {
     color: var(--Dark-brown)
 }
 
+.spending h1{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
 .monthBalance {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 0.5px solid var(--Medium-brown);
+    margin-top: 1rem;
     padding-top: 1rem;
 }
 
@@ -70,10 +81,3 @@ body {
 .total h2 {
     font-size: 30px;
 }
-
-
-
-
-
-
-/* border: 1px solid red; */
